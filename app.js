@@ -3,6 +3,13 @@ import * as THREE from 'https://esm.sh/three@0.162.0';
 import { OrbitControls } from 'https://esm.sh/three@0.162.0/examples/jsm/controls/OrbitControls.js';
 import { ConvexGeometry } from 'https://esm.sh/three@0.162.0/examples/jsm/geometries/ConvexGeometry.js';
 
+
+import * as THREE from 'https://unpkg.com/three@0.162.0/build/three.module.js';
+import { OrbitControls } from 'https://unpkg.com/three@0.162.0/examples/jsm/controls/OrbitControls.js';
+import { ConvexGeometry } from 'https://unpkg.com/three@0.162.0/examples/jsm/geometries/ConvexGeometry.js';
+
+
+
 const canvasHost = document.getElementById('three-canvas');
 const swatchGrid = document.getElementById('swatch-grid');
 const selectedName = document.getElementById('selected-name');
@@ -19,10 +26,12 @@ const COLOR_PRESETS = [
   { id: 'yellow', label: 'Жёлтый', hex: '#d4a43d', meaning: 'Уверенность и оптимизм.' },
   { id: 'violet', label: 'Фиолетовый', hex: '#6d53be', meaning: 'Интуиция и глубина.' },
   { id: 'white', label: 'Белый', hex: '#f5f7fa', meaning: 'Баланс и чистота.' },
+
   { id: 'teal', label: 'Бирюзовый', hex: '#2f9f9c', meaning: 'Внутренняя свежесть и мягкий тонус.' },
   { id: 'orange', label: 'Оранжевый', hex: '#d97832', meaning: 'Тёплая мотивация и движение вперёд.' },
   { id: 'rose', label: 'Розовый', hex: '#c96d8d', meaning: 'Эмоциональная открытость и забота о себе.' },
   { id: 'graphite', label: 'Графитовый', hex: '#4f5867', meaning: 'Собранность и уверенное присутствие.' },
+
 ];
 
 const state = {
