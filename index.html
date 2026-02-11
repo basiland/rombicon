@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rombicon — 3D-конфигуратор</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="layout">
+      <header class="hero">
+        <p class="eyebrow">Rombicon Configurator</p>
+        <h1>Настройте кристалл под своё состояние</h1>
+        <p class="hero-copy">
+          13 взаимосвязанных форм. 6 осознанных цветовых смыслов. Спокойный и точный инструмент
+          персонального выбора.
+        </p>
+      </header>
+
+      <section class="stage-card" aria-label="3D-конфигуратор кристалла">
+        <div id="three-canvas" class="canvas-wrap"></div>
+
+        <aside class="control-panel" id="control-panel" aria-live="polite">
+          <div class="panel-heading">
+            <p class="panel-label">Выбранный элемент</p>
+            <p class="panel-value" id="selected-name">—</p>
+          </div>
+
+          <div class="swatch-grid" id="swatch-grid"></div>
+
+          <p class="color-meaning" id="color-meaning">
+            Выберите элемент кристалла, затем задайте цвет, отражающий текущее состояние.
+          </p>
+
+          <button class="save-button" id="save-button" type="button">Сохранить кристалл</button>
+        </aside>
+      </section>
+    </main>
+
+    <script type="module" src="app.js"></script>
+  </body>
+</html>
