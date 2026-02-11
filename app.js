@@ -1,6 +1,13 @@
+
+// ESM CDN с корректным резолвом внутренних импортов three/examples в браузере.
+import * as THREE from 'https://esm.sh/three@0.162.0';
+import { OrbitControls } from 'https://esm.sh/three@0.162.0/examples/jsm/controls/OrbitControls.js';
+import { ConvexGeometry } from 'https://esm.sh/three@0.162.0/examples/jsm/geometries/ConvexGeometry.js';
+
 import * as THREE from 'https://unpkg.com/three@0.162.0/build/three.module.js';
 import { OrbitControls } from 'https://unpkg.com/three@0.162.0/examples/jsm/controls/OrbitControls.js';
 import { ConvexGeometry } from 'https://unpkg.com/three@0.162.0/examples/jsm/geometries/ConvexGeometry.js';
+
 
 const canvasHost = document.getElementById('three-canvas');
 const swatchGrid = document.getElementById('swatch-grid');
